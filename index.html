@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to My Personal Web Page</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #E6E6FA; 
+      color: #6A5ACD; 
+    }
+
+    
+    .glass-container {
+      background: rgba(230, 230, 250, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(106, 90, 205, 0.25);
+      padding: 40px;
+      margin-top: 80px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(106, 90, 205, 0.2);
+    }
+
+   
+    nav.navbar {
+      background: #CBC3E3; 
+      box-shadow: 0 4px 12px rgba(106, 90, 205, 0.4);
+    }
+    nav.navbar .nav-link {
+      color: #4B0082; 
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav.navbar .nav-link:hover {
+      color: #7B68EE; 
+    }
+    nav.navbar .navbar-brand {
+      color: #4B0082;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+
+   
+    .section-title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: #6A5ACD;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #7B68EE;
+      padding-bottom: 6px;
+      text-shadow: 0 0 5px #CBC3E3AA;
+    }
+
+   
+    .card {
+      background: #D8BFD8; 
+      border: none;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(106, 90, 205, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #4B0082;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px rgba(123, 104, 238, 0.35);
+    }
+
+    
+    .gallery {
+      display: flex;
+      gap: 22px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;  
+      box-shadow: 0 6px 18px rgba(123, 104, 238, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 3px solid #7B68EE;
+      filter: brightness(0.95);
+    }
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 14px 36px rgba(123, 104, 238, 0.6);
+      filter: brightness(1);
+    }
+
+    
+    .btn-custom {
+      background: #7B68EE;
+      color: #E6E6FA;
+      font-weight: 700;
+      border-radius: 50px;
+      padding: 12px 36px;
+      border: none;
+      box-shadow: 0 6px 20px rgba(123, 104, 238, 0.6);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .btn-custom:hover {
+      background: #4B0082;
+      color: #F0F0FF;
+      box-shadow: 0 10px 28px rgba(75, 0, 130, 0.8);
+    }
+
+    
+    .list-group-item {
+      background: #D8BFD8;
+      border: none;
+      color: #4B0082;
+      font-weight: 500;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(123, 104, 238, 0.15);
+      transition: background 0.3s ease;
+    }
+    .list-group-item:hover {
+      background: #CBC3E3;
+      color: #6A5ACD;
+      box-shadow: 0 6px 18px rgba(123, 104, 238, 0.4);
+    }
+    .list-group-item strong {
+      color: #7B68EE;
+    }
+
+    
+    body {
+      padding-top: 70px; 
+    }
+
+   
+    a {
+      color: #7B68EE;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #4B0082;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hasniya Banu</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" style="filter: invert(0)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#personal">Personal Info</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certifications</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container glass-container">
+
+  <h1 class="text-center mb-5">Welcome to My Personal Web Page</h1>
+
+ 
+  <section id="gallery" class="mb-5">
+    <h2 class="section-title">Image Gallery</h2>
+    <div class="gallery">
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image3.jpg" alt="Image 3" />
+    </div>
+  </section>
+
+  
+  <section id="personal" class="mb-5">
+    <h2 class="section-title">Personal Information</h2>
+    <div class="card p-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Index Number:</strong> ITBIN-2313-0015</li>
+        <li class="list-group-item"><strong>NIC:</strong> 200272200628</li>
+        <li class="list-group-item"><strong>Full Name:</strong> M.A.S.Hasniya Banu</li>
+        <li class="list-group-item"><strong>Surname with Initials:</strong> M.A.S.H Banu</li>
+        <li class="list-group-item"><strong>Date of Birth:</strong> 2002-08-09</li>
+        <li class="list-group-item"><strong>Gender:</strong> Female</li>
+        <li class="list-group-item"><strong>Ethnicity:</strong> Muslim</li>
+        <li class="list-group-item"><strong>Religion:</strong> Islam</li>
+        <li class="list-group-item"><strong>City:</strong> Akuressa</li>
+        <li class="list-group-item"><strong>District:</strong> Matara</li>
+        <li class="list-group-item"><strong>Province:</strong> Southern Province</li>
+      </ul>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="mb-5">
+    <h2 class="section-title">Contact Details</h2>
+    <div class="card p-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Email:</strong>
+          <a href="mailto:hasniyabanu748@gmail.com" class="fw-bold">hasniyabanu748@gmail.com</a>
+        </li>
+        <li class="list-group-item">
+          <strong>Mobile:</strong>
+          <a href="tel:+940758424380" class="fw-bold">+94 0758424380</a>
+        </li>
+        <li class="list-group-item">
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/hasniya-banu-8481a3317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="fw-bold">linkedin.com/in/hasniya</a>
+        </li>
+        <li class="list-group-item">
+          <strong>Google Scholar:</strong>
+          <a href="https://scholar.google.com/citations?user=123456" target="_blank" rel="noopener" class="fw-bold">Google Scholar Profile</a>
+        </li>
+        <li class="list-group-item">
+          <strong>ResearchGate:</strong>
+          <a href="https://www.researchgate.net/profile/Ansar" target="_blank" rel="noopener" class="fw-bold">ResearchGate Profile</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+ 
+  <section id="education" class="mb-5">
+    <h2 class="section-title">Educational Qualification</h2>
+    <div class="card p-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>A/L Stream:</strong> Technology Stream</li>
+        <li class="list-group-item"><strong>Subjects and Grades:</strong> Bio-System Technology - S, Science For Technology - C, ICT - S</li>
+        <li class="list-group-item"><strong>Z-Score:</strong> 0.2</li>
+        <li class="list-group-item"><strong>School Attended:</strong> Arafa Central College, Weligama</li>
+      </ul>
+    </div>
+  </section>
+
+  
+  <section id="certificates" class="mb-5">
+    <h2 class="section-title">Certificates and Diplomas</h2>
+    <div class="card p-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Full-Stack Development – University of Moratuwa</li>
+        <li class="list-group-item">Diplom in Graphic Design – Instaar, Akuressa</li>
+        <li class="list-group-item">Diploma in CS – Instaar, Akuressa</li>
+        <li class="list-group-item">Git & GitHub – Horizon Campus, Sri Lanka</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
